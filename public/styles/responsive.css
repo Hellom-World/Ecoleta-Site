@@ -1,0 +1,46 @@
+@media(max-width: 900px){
+    #page-home{
+        background-position-x: 70vw;
+    }
+    #page-home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #page-home header a{
+        position: absolute;
+        bottom: 48px;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    #page-home main{
+        align-items: center;
+    }
+    #page-search-results .cards{ /* responsividade da grid */
+        grid-template-columns: 1fr;
+
+        /* object-fit: cover; */ /* comando para mostrar a imagem de uma forma mais dinaminca */
+
+    }
+    /* pagina de cadastro / dados */
+    #page-create-point .field-group{
+        flex-direction: column;
+    }
+    #page-create-point .field-group .field + .field{    /* + .field é para fazer com que o comando seja dado para a proxima div de class field */
+        margin-left: 0px;
+    }
+    /* pagina de cadastro / itens de coleta */
+    .itens-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(min-width: 1700px){
+    #page-home{
+        background-position-x: 40vw;
+}
+}
+@media(max-height: 760px){
+    #page-home{
+        background-position-y: 150px;
+    }
+}
+    
